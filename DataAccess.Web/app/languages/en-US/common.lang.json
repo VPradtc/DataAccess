@@ -1,0 +1,22 @@
+﻿{
+  "cancel": "Cancel",
+  "copyright_inoxoft": "InoXoft &copy; 2016",
+  "copyright_label": "Copyright",
+  "create": "Create",
+  "edit": "Edit",
+  "delete": "Delete",
+  "home": "Home",
+  "info": "Info",
+  "name": "Name",
+  "save": "Save",
+  "users": "Users",
+  "areYouSure": "Are You Sure?",
+  "confirm": "Confirm",
+  "back": "Back",
+  "ok": "OK",
+  "deleted": "Deleted!",
+  "anErrorHasOccured": "An error has occured on the server",
+  "unableToDelete": "Unable to delete. Please try again later.",
+  "activate": "Activate",
+  "deactivate": "Deactivate"
+}

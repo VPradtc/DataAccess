@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E62D1F41-3CD7-47AB-B277-6BAC5FD87347}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataAccess.Dal</RootNamespace>
+    <AssemblyName>DataAccess.Dal</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\..\Identity Token Core\Model\DataAccess.IdentityTokenCore.Model\bin\Debug\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\..\Identity Token Core\Model\DataAccess.IdentityTokenCore.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Ninject.3.2.0.0\lib\net45-full\Ninject.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Identity\ApplicationUserManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\AuthClientRepository.cs" />
+    <Compile Include="Repositories\Base\PrimaryEntityPrimaryRepossitory.cs" />
+    <Compile Include="Repositories\Base\StatableEntityPrimaryRepository.cs" />
+    <Compile Include="Repositories\Base\TimeTrackableEntityPrimaryRepository.cs" />
+    <Compile Include="Repositories\Base\TrackableEntityPrimaryRepository.cs" />
+    <Compile Include="Repositories\RoleRepository.cs" />
+    <Compile Include="Repositories\UserRepository.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\Dal\DataAccess.Core.Dal.Abstraction\DataAccess.Core.Dal.Abstraction.csproj">
+      <Project>{25C2EA21-8400-4E11-B13C-4880DE29189E}</Project>
+      <Name>DataAccess.Core.Dal.Abstraction</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Core\Dal\DataAccess.Core.Dal\DataAccess.Core.Dal.csproj">
+      <Project>{E515FDB9-6041-45BD-A5FD-C634D20EDA2E}</Project>
+      <Name>DataAccess.Core.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Core\Model\DataAccess.Model.Abstraction\DataAccess.Core.Model.Abstraction.csproj">
+      <Project>{01E6225E-2212-46DB-B5ED-0AB3024C36B3}</Project>
+      <Name>DataAccess.Core.Model.Abstraction</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DataAccess.Model.Providers\DataAccess.Model.Definition.csproj">
+      <Project>{0FF45E9E-358E-49C8-8887-F5F4F730FFB0}</Project>
+      <Name>DataAccess.Model.Definition</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Identity Token Core\Model\DataAccess.IdentityTokenCore.Context\DataAccess.IdentityTokenCore.Context.csproj">
+      <Project>{2E4EBE5D-A26B-468C-ACB7-D5C0ACE79B27}</Project>
+      <Name>DataAccess.IdentityTokenCore.Context</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Identity Token Core\Model\DataAccess.IdentityTokenCore.Model\DataAccess.IdentityTokenCore.Model.csproj">
+      <Project>{A14A7CBA-0392-401E-84C9-F63D0351B5D1}</Project>
+      <Name>DataAccess.IdentityTokenCore.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Model\DataAccess.Model.Context\DataAccess.Model.Context.csproj">
+      <Project>{0BDA2B5C-931C-4FEE-AB89-DD64E2F2E845}</Project>
+      <Name>DataAccess.Model.Context</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Model\DataAccess.Model\DataAccess.Model.csproj">
+      <Project>{76FEEA49-7842-4FD3-8B2B-E8E3ABA4DC96}</Project>
+      <Name>DataAccess.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess.Dal.Abstraction\DataAccess.Dal.Abstraction.csproj">
+      <Project>{A0B95813-D35F-4B20-B79A-989EE8B04E27}</Project>
+      <Name>DataAccess.Dal.Abstraction</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

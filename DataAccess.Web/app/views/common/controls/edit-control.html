@@ -1,0 +1,10 @@
+﻿<div ng-if="render()">
+    <ix-edit-control-body config="config"
+                          form="form"
+                          ng-model="model">
+    </ix-edit-control-body>
+    <ix-edit-control-validation-block ng-if="config.messages"
+                                      form="form"
+                                      validation-config="validationConfig">
+    </ix-edit-control-validation-block>
+</div>

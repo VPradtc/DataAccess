@@ -1,0 +1,34 @@
+﻿.spin-icon {
+    bottom: 0px !important;
+    background: none !important;
+}
+
+.action-column-wrapper {
+    display: inline-block;
+}
+
+.btn-column-delete {
+    margin-left: 5px;
+}
+
+.crud-column {
+    width: 90px;
+    min-width:80px;
+}
+
+.full-screen {
+    height: 100vh;
+}
+
+.k-grid-excel {
+    background-color: transparent !important;
+}
+
+.k-grid-excel .k-icon {
+    color: #AAA !important;
+    background-position: -64px -96px !important;
+}
+
+.k-grid-toolbar {
+    background-color: #FFF !important;
+}

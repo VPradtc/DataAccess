@@ -1,0 +1,13 @@
+﻿<nav class="navbar-default navbar-static-side animated fadeInLeft" role="navigation">
+    <div class="sidebar-collapse all-height">
+        <ul side-navigation class="nav metismenu" id="side-menu">
+            <li class="nav-header" i18n="{{ navbar.title }}">
+            </li>
+            <ix-navbar-item
+                         ng-repeat="navItem in navbar.items"
+                         item="navItem"
+                         ng-if="showItem(navItem)">
+            </ix-navbar-item>
+        </ul>
+    </div>
+</nav>

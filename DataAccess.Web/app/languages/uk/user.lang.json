@@ -1,0 +1,21 @@
+﻿{
+  "firstName": "Ім'я",
+  "lastName": "Прізвище",
+  "users": "Користувачі",
+  "user": "Користувач",
+  "createUser": "Створити Користувача",
+  "editUser": "Редагувати Користувача",
+  "email": "Електронна пошта",
+  "phoneNumber": "Телефон",
+  "role": "Роль",
+  "selectRole": "Виберіть Роль...",
+  "deleteThisUser": "Видалити цього користувача?",
+  "firstNameIsRequired": "Вкажіть ім'я користувача.",
+  "lastNameIsRequired": "Вкажіть прізвище користувача.",
+  "passwordIsRequired": "Вкажіть пароль.",
+  "emailIsRequired": "Вкажіть електронну пошту.",
+  "invalidEmailFormat": "Невірний формат.",
+  "roleIsRequired": "Вкажіть роль.",
+  "userWithSuchEmailAlreadyExists": "Користувач з такою поштою вже існує.",
+  "deleteThisUser": "Видалити Користувача?"
+}

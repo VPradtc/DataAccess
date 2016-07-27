@@ -1,0 +1,23 @@
+﻿<div class="middle-box text-center loginscreen full-screen animated fadeInDown">
+    <h3 i18n="auth.register"></h3>
+    <form class="m-t"
+          role="form"
+          name="model.form"
+          novalidate>
+        <ix-edit-control ng-repeat="field in options.fields"
+                         ng-model="model.entity"
+                         form="model.form"
+                         config="field">
+        </ix-edit-control>
+        <button type="submit"
+                class="btn btn-primary block full-width m-b"
+                i18n="auth.register"
+                ng-click="register()">
+        </button>
+        <p class="text-muted text-center">
+            <small i18n="auth.alreadyHaveAnAccount">
+            </small>
+        </p>
+        <a class="btn btn-sm btn-success btn-block" ng-click="login()">Login</a>
+    </form>
+</div>

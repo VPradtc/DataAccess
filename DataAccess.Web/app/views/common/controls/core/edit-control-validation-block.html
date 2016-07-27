@@ -1,0 +1,10 @@
+﻿<div class="form-group m-t-xs"
+     ng-messages="form[config.name].$error"
+     ng-if="config.trigger()"
+     ng-messages-multiple>
+    <small class="text-danger"
+           ng-repeat="message in config.messages"
+           ng-show="message.trigger()"
+           ng-message="{{ message.validation }}"
+           i18n="{{ message.text }}"></small>
+</div>

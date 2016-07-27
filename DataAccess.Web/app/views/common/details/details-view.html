@@ -1,0 +1,21 @@
+﻿<ix-details-header config="headerConfig">
+</ix-details-header>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <form role="form"
+          name="model.form"
+          novalidate>
+        <div class="row">
+            <div class="col-lg-6 ibox float-e-margins">
+                <div class="ibox-content">
+                    <section class="row"
+                         ng-repeat="field in options.fields">
+                        <ix-edit-control class="col-sm-6 col-xs-12 "
+                                         ng-model="model.entity"
+                                         form="model.form"
+                                         config="field"></ix-edit-control>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

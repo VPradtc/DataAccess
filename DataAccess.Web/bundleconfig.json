@@ -1,0 +1,74 @@
+[
+  {
+    "outputFileName": "app/config/route.config.js",
+    "inputFiles": [
+      "app/config/route.config.js"
+    ]
+  },
+  {
+    "outputFileName": "app/config/lazyLoad.config.js",
+    "inputFiles": [
+      "app/config/lazyLoad.config.js"
+    ]
+  },
+  {
+    "outputFileName": "app/config/url.debug.config.js",
+    "inputFiles": [
+      "app/config/url.debug.config.js"
+    ]
+  },
+  {
+    "outputFileName": "app/config/url.publish.config.js",
+    "inputFiles": [
+      "app/config/url.publish.config.js"
+    ]
+  },
+  {
+    "outputFileName": "app/app.js",
+    "inputFiles": [
+      "app/app.js"
+    ]
+  },
+  {
+    "outputFileName": "app/services/authInterceptorService.js",
+    "inputFiles": [
+      "app/services/authInterceptorService.js"
+    ]
+  },
+  {
+    "outputFileName": "app/services/authService.js",
+    "inputFiles": [
+      "app/services/authService.js"
+    ]
+  },
+  {
+    "outputFileName": "app/services/baseService.js",
+    "inputFiles": [
+      "app/services/baseService.js"
+    ]
+  },
+  {
+    "outputFileName": "app/controllers/authController.js",
+    "inputFiles": [
+      "app/controllers/authController.js"
+    ]
+  },
+  {
+    "outputFileName": "app/controllers/base/baseController.js",
+    "inputFiles": [
+      "app/controllers/base/baseController.js"
+    ]
+  },
+  {
+    "outputFileName": "app/controllers/base/baseEditController.js",
+    "inputFiles": [
+      "app/controllers/base/baseEditController.js"
+    ]
+  },
+  {
+    "outputFileName": "app/factory/promiseFactory.js",
+    "inputFiles": [
+      "app/factory/promiseFactory.js"
+    ]
+  }
+]

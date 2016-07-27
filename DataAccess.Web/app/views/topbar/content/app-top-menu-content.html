@@ -1,0 +1,15 @@
+﻿<ul class="nav navbar-top-links navbar-right">
+    <li>
+        <a class="left" ui-sref="app.main.profile">
+            <b>
+                {{ getFirstName() }} {{ getLastName() }}
+            </b>
+        </a>
+    </li>
+    <li ng-click="logout()">
+        <a>
+            <i class="fa fa-sign-out"></i>
+            <span i18n="auth.logout"></span>
+        </a>
+    </li>
+</ul>

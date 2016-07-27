@@ -1,0 +1,42 @@
+﻿<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-8 col-sm-6 col-xs-12">
+        <h2 i18n="{{ options.view.labels.title }}"></h2>
+        <ix-breadcrumb nodes="options.view.breadcrumb">
+        </ix-breadcrumb>
+    </div>
+    <div class="col-lg-4  col-sm-6 col-xs-12">
+        <div class="title-action row">
+            <div class="col-sm-6 col-xs-12">
+                <a class="btn btn-primary  btn-outline" style="width: 100%" ng-click="validateAndSave()">
+                    <span i18n="{{options.view.labels.confirm}}"></span>
+                </a>
+            </div>
+
+            <div class="col-sm-6 col-xs-12">
+                <a class="btn btn-primary btn-outline"
+                   style="width: 100%"
+                   ng-click="cancel()"
+                   i18n="common.cancel"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <form role="form"
+          name="model.form"
+          novalidate>
+        <div class="row">
+            <div class="col-lg-6 ibox float-e-margins">
+                <div class="ibox-content">
+                    <div class="row"
+                         ng-repeat="field in options.fields">
+                        <ix-edit-control class="col-sm-6 col-xs-12 "
+                                         ng-model="model.entity"
+                                         form="model.form"
+                                         config="field"></ix-edit-control>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

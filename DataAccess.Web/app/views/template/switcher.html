@@ -1,0 +1,21 @@
+﻿<div class="sw-wrapper" ng-init="init()">
+    <div class="ck-button left">
+        <label>
+            <input type="radio"
+                   ng-model="ngModel"
+                   name="{{name}}"
+                   ng-value="options.valueLeft">
+            <span>{{options.labelLeft}}</span>
+        </label>
+    </div>
+
+    <div class="ck-button right">
+        <label>
+            <input type="radio"
+                   ng-model="ngModel"
+                   name="{{name}}"
+                   ng-value="options.valueRight">
+            <span>{{options.labelRight}}</span>
+        </label>
+    </div>
+</div>

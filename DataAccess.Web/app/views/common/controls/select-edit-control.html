@@ -1,0 +1,13 @@
+﻿<label class="control-label" i18n="{{ config.label }}"></label>
+<select kendo-drop-down-list
+        k-options="selectOptions"
+        k-ng-model="model[config.field]"
+        k-auto-bind="true"
+        k-value-primitive="true"
+        k-option-label="optionLabel"
+        style="width: 100%"></select>
+
+<input ng-hide="true"
+       class="form-control"
+       ng-model="model[config.field]"
+       ix-attrs="config.attrs" />

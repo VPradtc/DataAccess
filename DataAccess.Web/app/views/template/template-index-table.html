@@ -1,0 +1,15 @@
+﻿<div class="wrapper wrapper-content animated fadeInRight" >
+    <div class="ibox float-e-margins ">
+        <div class="ibox-content">
+            <table class="table table-striped table-bordered table-hover" style="width: 100%">
+                <tbody>
+                    <tr ng-repeat="r in gridSource">
+                        <td ng-repeat="(key, value) in r">
+                            {{ value }}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

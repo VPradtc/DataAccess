@@ -1,0 +1,22 @@
+﻿<div style="display: block;"
+     class="sweet-alert showSweetAlert visible"
+     tabindex="-1">
+
+    <h2 i18n="{{ data.labels.title }}"></h2>
+
+    <p class="block" i18n="{{ data.labels.text }}">
+    </p>
+    <br>
+
+    <p i18n="{{ data.labels.footer }}">
+    </p>
+    <p>
+        <a ng-href="mailto: {{ data.labels.footerEmail | i18n }}">
+            {{ data.labels.footerEmail | i18n }}
+        </a>
+    </p>
+
+    <div ng-transclude="dialogFooter">
+
+    <div ng-transclude="dialogButtons"></div>
+</div>

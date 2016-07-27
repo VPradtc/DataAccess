@@ -1,0 +1,20 @@
+﻿<div id="wrapper">
+
+    <ix-navbar></ix-navbar>
+
+    <div id="page-wrapper" class="gray-bg height-template-body">
+
+        <div ng-include="'app/views/template/top-bar.html'"></div>
+
+        <!-- Main view  -->
+        <div dw-loading="main" ui-view id="appBody"></div>
+
+        <div class="footer">
+            <div>
+                <strong i18n="common.copyright_label"></strong>
+                <span i18n="common.copyright_inoxoft"></span>
+            </div>
+        </div>
+    </div>
+
+</div>

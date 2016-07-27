@@ -1,0 +1,13 @@
+﻿{
+  "login": "Залогуватись",
+  "logout": "Вилогуватись",
+  "register": "Реєстрація",
+  "password": "Пароль",
+  "repeatPassword": "Повторіть пароль",
+  "role_clientRetail": "Роздрібний клієнт",
+  "role_client": "Оптовий клієнт",
+  "role_manager": "Менеджер",
+  "role_admin": "Адміністратор",
+  "alreadyHaveAnAccount": "Вже зареєструвались?",
+  "passwordsDoNotMatch": "Паролі не збігаються"
+}

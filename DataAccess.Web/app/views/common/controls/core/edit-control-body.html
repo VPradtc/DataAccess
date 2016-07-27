@@ -1,0 +1,10 @@
+﻿<div class="form-group">
+    <label ng-if="config.label" class="control-label">
+        {{ config.label.value || config.label | i18n:config.label.params }}
+    </label>
+    <div config="config"
+         form="form"
+         ng-model="model"
+         ix-attrs="getControlComponent()">
+    </div>
+</div>

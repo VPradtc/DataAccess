@@ -1,0 +1,14 @@
+﻿<ol class="breadcrumb">
+    <li ng-repeat="node in nodes">
+        <!--UI Router Bug Workaround-->
+        <a ng-if="node.sref"
+           ui-sref="{{ node.sref }}"
+           ng-class="{ 'active' : $last }"
+           i18n="{{node.title}}">
+        </a>
+        <a ng-if="!node.sref"
+           ng-class="{ 'active' : $last }"
+           i18n="{{node.title}}">
+        </a>
+    </li>
+</ol>

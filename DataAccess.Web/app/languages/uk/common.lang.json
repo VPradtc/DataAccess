@@ -1,0 +1,22 @@
+﻿{
+  "cancel": "Відмінити",
+  "copyright_inoxoft": "InoXoft &copy; 2016",
+  "copyright_label": "Copyright",
+  "create": "Створити",
+  "edit": "Редагувати",
+  "delete": "Видалити",
+  "home": "Головна",
+  "info": "Інформація",
+  "name": "Ім'я",
+  "save": "Зберегти",
+  "users": "Користувачі",
+  "areYouSure": "Ви впевнені?",
+  "confirm": "Підтвердити",
+  "back": "Назад",
+  "ok": "Гаразд",
+  "deleted": "Видалено!",
+  "anErrorHasOccured": "Помилка",
+  "unableToDelete": "Неможливо видалити. Спробуйте пізніше.",
+  "activate": "Активувати",
+  "deactivate": "Деактивувати"
+}

@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2C033DA5-61E0-4CFF-9737-D327E4868FFF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataAccess.Dto.Dal</RootNamespace>
+    <AssemblyName>DataAccess.Dto.Dal</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\..\..\packages\AutoMapper.4.2.1\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Ninject.3.2.0.0\lib\net45-full\Ninject.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Implementation\Repositories\RoleRepositoryResolver.cs" />
+    <Compile Include="Implementation\Repositories\UserRepositoryResolver.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Core Dto\Dal\DataAccess.CoreDto.Dal.Abstraction\DataAccess.CoreDto.Dal.Abstraction.csproj">
+      <Project>{14DA8583-F37B-4692-B89B-64E51280C525}</Project>
+      <Name>DataAccess.CoreDto.Dal.Abstraction</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Core Dto\Dal\DataAccess.CoreDto.Dal\DataAccess.CoreDto.Dal.csproj">
+      <Project>{1B2D33D1-54C3-4C8B-A0DA-CC0446ADFFE9}</Project>
+      <Name>DataAccess.CoreDto.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Core Dto\Model\DataAccess.CoreDto.Model.Kendo\DataAccess.CoreDto.Model.Kendo.csproj">
+      <Project>{86d530cb-7792-4511-baa9-6659ff0db256}</Project>
+      <Name>DataAccess.CoreDto.Model.Kendo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Core\Dal\DataAccess.Core.Dal.Abstraction\DataAccess.Core.Dal.Abstraction.csproj">
+      <Project>{25C2EA21-8400-4E11-B13C-4880DE29189E}</Project>
+      <Name>DataAccess.Core.Dal.Abstraction</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Core\Dal\DataAccess.Core.Dal\DataAccess.Core.Dal.csproj">
+      <Project>{E515FDB9-6041-45BD-A5FD-C634D20EDA2E}</Project>
+      <Name>DataAccess.Core.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Core\Model\DataAccess.Model.Abstraction\DataAccess.Core.Model.Abstraction.csproj">
+      <Project>{01E6225E-2212-46DB-B5ED-0AB3024C36B3}</Project>
+      <Name>DataAccess.Core.Model.Abstraction</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Dal\DataAccess.Dal.Abstraction\DataAccess.Dal.Abstraction.csproj">
+      <Project>{A0B95813-D35F-4B20-B79A-989EE8B04E27}</Project>
+      <Name>DataAccess.Dal.Abstraction</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Dal\DataAccess.Dal\DataAccess.Dal.csproj">
+      <Project>{E62D1F41-3CD7-47AB-B277-6BAC5FD87347}</Project>
+      <Name>DataAccess.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\DataAccess.Model.Providers\DataAccess.Model.Definition.csproj">
+      <Project>{0ff45e9e-358e-49c8-8887-f5f4f730ffb0}</Project>
+      <Name>DataAccess.Model.Definition</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Identity Token Core\Model\DataAccess.IdentityTokenCore.Model\DataAccess.IdentityTokenCore.Model.csproj">
+      <Project>{A14A7CBA-0392-401E-84C9-F63D0351B5D1}</Project>
+      <Name>DataAccess.IdentityTokenCore.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Model\DataAccess.Model.Context\DataAccess.Model.Context.csproj">
+      <Project>{0bda2b5c-931c-4fee-ab89-dd64e2f2e845}</Project>
+      <Name>DataAccess.Model.Context</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Model\DataAccess.Model\DataAccess.Model.csproj">
+      <Project>{76FEEA49-7842-4FD3-8B2B-E8E3ABA4DC96}</Project>
+      <Name>DataAccess.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Model\DataAccess.Dto.Model\DataAccess.Dto.Model.csproj">
+      <Project>{8BFFEA8F-DA70-4D9B-BFFE-C89B015F3466}</Project>
+      <Name>DataAccess.Dto.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess.Dto.Dal.Abstraction\DataAccess.Dto.Dal.Abstraction.csproj">
+      <Project>{2D1667F7-0C4F-438D-9076-CF15CE83FFE6}</Project>
+      <Name>DataAccess.Dto.Dal.Abstraction</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

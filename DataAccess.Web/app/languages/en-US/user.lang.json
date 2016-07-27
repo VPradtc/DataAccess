@@ -1,0 +1,21 @@
+﻿{
+  "firstName": "First Name",
+  "lastName": "Last Name",
+  "users": "Users",
+  "user": "User",
+  "createUser": "Create User",
+  "editUser": "Edit User",
+  "email": "Email",
+  "phoneNumber": "Phone Number",
+  "role": "Role",
+  "selectRole": "Select Role...",
+  "deleteThisUser": "Delete this User?",
+  "firstNameIsRequired": "First Name is required.",
+  "lastNameIsRequired": "Last Name is required.",
+  "passwordIsRequired": "Password is required.",
+  "emailIsRequired": "Email is required.",
+  "invalidEmailFormat": "Invalid email format.",
+  "roleIsRequired": "Role is required.",
+  "userWithSuchEmailAlreadyExists": "User with such email already exists.",
+  "deleteThisUser": "Delete this User?"
+}

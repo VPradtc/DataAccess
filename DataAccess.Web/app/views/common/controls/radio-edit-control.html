@@ -1,0 +1,8 @@
+﻿<div ng-repeat="option in config.options">
+    <h5>
+        <input type="radio"
+               ix-attrs="option.attrs"
+               validators="config.validators" />
+        <label class="control-label" i18n="{{ option.label }}"></label>
+    </h5>
+</div>
