@@ -14,8 +14,8 @@ namespace DataAccess.CoreDto.Model.Kendo
         {
             var result = new KendoGridResponse<TDto>
             {
-                Data = await records.Skip((page - 1) * pageSize).Take(pageSize).ToListAsync(),
-                Total = await records.CountAsync()
+                Data = records.Skip((page - 1) * pageSize).Take(pageSize).ToList(),
+                Total = records.Count()
             };
 
             return result;

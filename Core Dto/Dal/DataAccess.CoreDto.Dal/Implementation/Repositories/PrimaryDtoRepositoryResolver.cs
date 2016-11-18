@@ -134,7 +134,7 @@ namespace DataAccess.CoreDto.Dal.Implementation.Repositories
         {
             var query = EntityRepository.Get(filter);
 
-            var dtoQuery = query.ProjectTo<TDto>(projectionParameters);
+            var dtoQuery = query.Select(item => Mapper.Map<TDto>(item));
 
             dtoQuery = ApplyFiltering(request, dtoQuery);
 

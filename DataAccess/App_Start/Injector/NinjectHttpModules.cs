@@ -66,7 +66,7 @@ namespace DataAccess.Injector
                 Kernel.Bind<IAuthClientRepository>().To<AuthClientRepository>();
 
                 Kernel.Bind<IUserRepositoryResolver>().To<UserRepositoryResolver>();
-                Kernel.Bind<IUserRepository>().To<UserRepository>();
+                Kernel.Bind<IUserRepository>().To<AdoNetUserRepository>();
 
                 Kernel.Bind<IRoleRepositoryResolver>().To<RoleRepositoryResolver>();
                 Kernel.Bind<IRoleRepository>().To<RoleRepository>();

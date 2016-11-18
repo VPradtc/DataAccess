@@ -108,7 +108,7 @@ namespace DataAccess.Entities.Identity
 
         #endregion IEntityMap
 
-        public User()
+        public User() : base()
         {
             Guid userId;
             var userIdExists =  Guid.TryParse(Thread.CurrentPrincipal.Identity.GetUserId(), out userId);

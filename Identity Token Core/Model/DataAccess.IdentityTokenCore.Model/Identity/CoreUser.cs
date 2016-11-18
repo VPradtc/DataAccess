@@ -10,6 +10,11 @@ namespace DataAccess.IdentityTokenCore.Model.Identity
         where TUserRole : CoreUserRole<TKey>
         where TClaim : CoreClaim<TKey>
     {
+        public CoreUser() : base()
+        {
+
+        }
+
         public virtual ICollection<TUserEmail> UserEmails { get; set; }
     }
 }
