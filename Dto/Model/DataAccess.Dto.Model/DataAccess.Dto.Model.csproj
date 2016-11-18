@@ -69,6 +69,7 @@
     <Compile Include="Models\Base\TrackableDto_T.cs" />
     <Compile Include="Models\Base\TimeTrackableDto.cs" />
     <Compile Include="Models\DropDownItem\DropDownItemDto.cs" />
+    <Compile Include="Models\Product\ProductDto.cs" />
     <Compile Include="Models\Role\RoleDto.cs" />
     <Compile Include="Models\User\UserDto.cs" />
     <Compile Include="Models\User\UserRegisterDto.cs" />
