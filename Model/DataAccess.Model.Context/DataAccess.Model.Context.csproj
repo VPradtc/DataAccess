@@ -62,6 +62,14 @@
     <Compile Include="Migrations\201609120742042_20160912_Init.Designer.cs">
       <DependentUpon>201609120742042_20160912_Init.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611181354070_Init2.cs" />
+    <Compile Include="Migrations\201611181354070_Init2.Designer.cs">
+      <DependentUpon>201611181354070_Init2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611181358391_Product_Create.cs" />
+    <Compile Include="Migrations\201611181358391_Product_Create.Designer.cs">
+      <DependentUpon>201611181358391_Product_Create.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Base\SqlScriptDbMigration.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -104,6 +112,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201609120742042_20160912_Init.resx">
       <DependentUpon>201609120742042_20160912_Init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611181354070_Init2.resx">
+      <DependentUpon>201611181354070_Init2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611181358391_Product_Create.resx">
+      <DependentUpon>201611181358391_Product_Create.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

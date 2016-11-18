@@ -4,9 +4,9 @@ angular.module('DataAccessApp').factory('homeRouteProvider',
 function HomeRouteProvider(enumRoleIdentifier, authService) {
 
     var _routes = {
-        default: 'app.auth.login'
+        default: 'app.main.user.index'
     };
-    _routes[enumRoleIdentifier.admin] = 'app.main.user.index'
+    _routes[enumRoleIdentifier.admin] = 'app.main.user.index';
 
     var _getRouteFor = function (roleIdentifier) {
         return routes[roleIdentifier] || _routes.default;

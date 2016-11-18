@@ -96,6 +96,7 @@ namespace DataAccess.Entities.Identity
 
         public virtual ICollection<User> CreatedUsers { get; set; }
         public virtual ICollection<User> ModifiedUsers { get; set; }
+        public virtual ICollection<Product> Products { get; internal set; }
 
         #endregion
 

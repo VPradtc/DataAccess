@@ -54,6 +54,7 @@
     <Compile Include="Entities\BaseEntities\TrackableEntity.cs" />
     <Compile Include="Entities\BaseEntities\PrimaryEntity.cs" />
     <Compile Include="Entities\BaseEntities\StatableEntity.cs" />
+    <Compile Include="Entities\Product.cs" />
     <Compile Include="Enums\EntityBaseType.cs" />
     <Compile Include="Enums\RoleIdentifier.cs" />
     <Compile Include="Identity\Claim.cs" />
